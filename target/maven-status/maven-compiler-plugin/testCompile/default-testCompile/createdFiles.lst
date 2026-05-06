@@ -1,0 +1,2 @@
+suites\authentification\TestLoginAPI.class
+suites\authentification\TestLoginWeb.class
