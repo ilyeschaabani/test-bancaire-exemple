@@ -3,11 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="suites.authentification.TestLoginAPI">
+      <class name="suites.herapp.TestHerappSuite">
         <methods>
-          <include name="testLoginOK"/>
+          <include name="testPageNotFound"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- suites.authentification.TestLoginAPI -->
+      </class> <!-- suites.herapp.TestHerappSuite -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

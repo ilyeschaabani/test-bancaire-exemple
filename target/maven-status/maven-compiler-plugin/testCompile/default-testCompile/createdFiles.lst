@@ -1,2 +1,3 @@
+suites\herapp\TestHerappSuite.class
 suites\authentification\TestLoginAPI.class
 suites\authentification\TestLoginWeb.class
