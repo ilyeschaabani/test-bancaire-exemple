@@ -123,9 +123,7 @@ public class TestHerappSuite {
 @Test(priority = 8)
 public void testPageNotFound() {
     driver.get(baseUrl + "/random-url");
-    // Sur ce site, une page inconnue affiche "Not Found" dans le titre
-    String title = driver.getTitle();
-    assertTrue(title.contains("Not Found"),
-               "Le titre de la page 404 doit contenir 'Not Found'");
+    String bodyText = driver.findElement(By.tagName("body")).getText();
+    assertTrue(bodyText.contains("Not Found"));
 }
 }
