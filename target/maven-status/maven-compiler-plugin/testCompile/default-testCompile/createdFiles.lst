@@ -1,8 +1,0 @@
-suites\integration\TestBaseH2.class
-suites\authentification\TestLoginAPI.class
-suites\authentification\TestLoginWeb.class
-suites\unit\TaxeCalculatorTest.class
-suites\unit\CompteService.class
-suites\unit\CompteServiceTest.class
-suites\herapp\TestHerappSuite.class
-suites\unit\TauxService.class

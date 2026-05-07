@@ -1,5 +1,13 @@
+C:\Git\test-bancaire-exemple\src\test\java\com\bank\integration\AuthIntegrationTest.java
+C:\Git\test-bancaire-exemple\src\test\java\com\bank\integration\TransactionApiIntegrationTest.java
+C:\Git\test-bancaire-exemple\src\test\java\com\bank\unit\FeeCalculatorTest.java
+C:\Git\test-bancaire-exemple\src\test\java\com\bank\unit\InterestCalculatorTest.java
+C:\Git\test-bancaire-exemple\src\test\java\com\bank\unit\PasswordValidatorTest.java
+C:\Git\test-bancaire-exemple\src\test\java\com\bank\unit\TransferValidatorTest.java
 C:\Git\test-bancaire-exemple\src\test\java\suites\authentification\TestLoginAPI.java
 C:\Git\test-bancaire-exemple\src\test\java\suites\authentification\TestLoginWeb.java
+C:\Git\test-bancaire-exemple\src\test\java\suites\banking\LoginAndOverviewE2ETest.java
+C:\Git\test-bancaire-exemple\src\test\java\suites\banking\MoneyTransferE2ETest.java
 C:\Git\test-bancaire-exemple\src\test\java\suites\herapp\TestHerappSuite.java
 C:\Git\test-bancaire-exemple\src\test\java\suites\integration\TestBaseH2.java
 C:\Git\test-bancaire-exemple\src\test\java\suites\unit\CompteServiceTest.java
