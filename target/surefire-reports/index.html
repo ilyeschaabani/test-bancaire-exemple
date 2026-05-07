@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="suites.herapp.TestHerappSuite" class="method navigator-link" hash-for-method="testPageNotFound">testPageNotFound</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -147,6 +133,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="suites.herapp.TestHerappSuite" class="method navigator-link" hash-for-method="testPageNotFound">testPageNotFound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="suites.herapp.TestHerappSuite" class="method navigator-link" hash-for-method="testSecurePageAfterLogin">testSecurePageAfterLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -162,26 +153,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">suites.herapp.TestHerappSuite</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPageNotFound">
-                  </a> <!-- testPageNotFound -->
-                  <span class="method-name">testPageNotFound</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at suites.herapp.TestHerappSuite.testPageNotFound(TestHerappSuite.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -228,6 +199,13 @@
                   <a name="testLogout">
                   </a> <!-- testLogout -->
                   <span class="method-name">testLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageNotFound">
+                  </a> <!-- testPageNotFound -->
+                  <span class="method-name">testPageNotFound</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -292,42 +270,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testDropdown')
+data.setCell(0, 1, 'testLoginSuccess')
 data.setCell(0, 2, 'suites.herapp.TestHerappSuite')
-data.setCell(0, 3, 2539);
+data.setCell(0, 3, 2276);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginSuccess')
+data.setCell(1, 1, 'testLogout')
 data.setCell(1, 2, 'suites.herapp.TestHerappSuite')
-data.setCell(1, 3, 2292);
+data.setCell(1, 3, 2067);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLogout')
+data.setCell(2, 1, 'testSecurePageAfterLogin')
 data.setCell(2, 2, 'suites.herapp.TestHerappSuite')
-data.setCell(2, 3, 2276);
+data.setCell(2, 3, 1889);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSecurePageAfterLogin')
+data.setCell(3, 1, 'testLoginFailure')
 data.setCell(3, 2, 'suites.herapp.TestHerappSuite')
-data.setCell(3, 3, 1896);
+data.setCell(3, 3, 1779);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testLoginFailure')
+data.setCell(4, 1, 'testFileUpload')
 data.setCell(4, 2, 'suites.herapp.TestHerappSuite')
-data.setCell(4, 3, 1722);
+data.setCell(4, 3, 1575);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testFileUpload')
+data.setCell(5, 1, 'testCheckbox')
 data.setCell(5, 2, 'suites.herapp.TestHerappSuite')
-data.setCell(5, 3, 1579);
+data.setCell(5, 3, 1502);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCheckbox')
+data.setCell(6, 1, 'testDropdown')
 data.setCell(6, 2, 'suites.herapp.TestHerappSuite')
-data.setCell(6, 3, 1462);
+data.setCell(6, 3, 1486);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testPageNotFound')
 data.setCell(7, 2, 'suites.herapp.TestHerappSuite')
-data.setCell(7, 3, 598);
+data.setCell(7, 3, 556);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -360,97 +338,95 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginSuccess</span>
-                <span class="method-start">518 ms</span>
+                <span class="method-start">527 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2811 ms</span>
+                <span class="method-start">2805 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">2816 ms</span>
+                <span class="method-start">2810 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginFailure</span>
-                <span class="method-start">2823 ms</span>
+                <span class="method-start">2816 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4545 ms</span>
+                <span class="method-start">4596 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4548 ms</span>
+                <span class="method-start">4598 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCheckbox</span>
-                <span class="method-start">4559 ms</span>
+                <span class="method-start">4604 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6021 ms</span>
+                <span class="method-start">6106 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">6022 ms</span>
+                <span class="method-start">6108 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testFileUpload</span>
-                <span class="method-start">6028 ms</span>
+                <span class="method-start">6114 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7608 ms</span>
+                <span class="method-start">7689 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7609 ms</span>
+                <span class="method-start">7691 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSecurePageAfterLogin</span>
-                <span class="method-start">7614 ms</span>
+                <span class="method-start">7702 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9510 ms</span>
+                <span class="method-start">9592 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9512 ms</span>
+                <span class="method-start">9593 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLogout</span>
-                <span class="method-start">9524 ms</span>
+                <span class="method-start">9600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11800 ms</span>
+                <span class="method-start">11667 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11802 ms</span>
+                <span class="method-start">11669 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDropdown</span>
-                <span class="method-start">11806 ms</span>
+                <span class="method-start">11675 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14345 ms</span>
+                <span class="method-start">13161 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14347 ms</span>
+                <span class="method-start">13163 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testPageNotFound</span>
-                <span class="method-start">14351 ms</span>
+                <span class="method-start">13169 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14952 ms</span>
+                <span class="method-start">13726 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

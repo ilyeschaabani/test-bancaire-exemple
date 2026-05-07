@@ -1,3 +1,6 @@
 C:\Git\test-bancaire-exemple\src\test\java\suites\authentification\TestLoginAPI.java
 C:\Git\test-bancaire-exemple\src\test\java\suites\authentification\TestLoginWeb.java
 C:\Git\test-bancaire-exemple\src\test\java\suites\herapp\TestHerappSuite.java
+C:\Git\test-bancaire-exemple\src\test\java\suites\integration\TestBaseH2.java
+C:\Git\test-bancaire-exemple\src\test\java\suites\unit\CompteServiceTest.java
+C:\Git\test-bancaire-exemple\src\test\java\suites\unit\TaxeCalculatorTest.java
